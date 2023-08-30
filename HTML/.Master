@@ -1,0 +1,106 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PhysiscsMaster.master.cs" Inherits="task_12.HTML.PhysiscsMaster" ClientIDMode="Static" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Physics Site demo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+   
+
+    <script src="../JS/PhysicsJS.js"></script>
+    <link href="../CSS/StyleSheet1.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id="main-bg" class="bg-image"  style="background-image:url('../Img/pysics background 3.jpg'); height:100vh;">
+    <div class="hero">
+          <form id="form1" runat="server">
+
+            <div class="container-lg">
+
+                <img src="../Img/physics.png" alt="Physics" height="100" /><img src="../Img/physics.png" alt="Physics" height="100" /><img src="../Img/physics.png" alt="Physics" height="100" /><img src="../Img/physics.png" alt="Physics" height="100" /><img src="../Img/physics.png" alt="Physics" height="100" /><img src="../Img/physics.png" alt="Physics" height="100" />
+            </div>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="nav-class container-fluid" style="background-color:black; ">
+                    <img src="../Img/physics.png" alt="Bootstrap" width="50" height="40" />
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" style="color:white" href="Physics.aspx">Physics</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:white;">Login
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Login</a></li>
+                                    <li><a class="dropdown-item" href="LogUp.aspx">LogUp</a></li>
+                                    <li><a class="dropdown-item" href="#" style="color: red">Logout</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" style=color:white;>Optics</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style=color:white;>Mechanics
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="Kinematics.aspx">Kinematics</a></li>
+                                    <li><a class="dropdown-item" href="Dynamics.aspx">Dynamics</a></li>
+                                    <li><a class="dropdown-item" href="Circular Motion.aspx">Circular Motion</a></li>
+                                    <li><a class="dropdown-item" href="Energy.aspx">Energy</a></li>
+                                    <li><a class="dropdown-item" href="Momentum and Impulse.aspx">Momentum and Impulse</a></li>
+                                    <li><a class="dropdown-item" href="Gravitation.aspx">Gravitation</a></li>
+                                    <li><a class="dropdown-item" href="Harmonical Oscilation.aspx">Harmonical Oscilation</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style=color:white;>Electricity
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="Electricity and Coulombs Law.aspx">Electricity and Colon law</a></li>
+                                    <li><a class="dropdown-item" href="Electical Field.aspx">Electical Field</a></li>
+                                    <li><a class="dropdown-item" href="Electic Potential Energy.aspx">Electic Potential Energy</a></li>
+                                    <li><a class="dropdown-item" href="Current and Resistance.aspx">Current and Resistance</a></li>
+                                    <li><a class="dropdown-item" href="DC Circuits.aspx">DC Circuits</a></li>
+                                    <li><a class="dropdown-item" href="Magnets and Magnetic Fields.aspx">Magnets and Magnet Field</a></li>
+                                    <li><a class="dropdown-item" href="EMF and Induction.aspx">Faradey law and inductive EMF</a></li>
+                                </ul>
+                            </li>
+                             <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" style="color:white" href="Admin.aspx">Admin</a>
+                            </li>
+                            <%--<li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>--%>
+                        </ul>
+
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="width: 10%">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+
+
+                    </div>
+                </div>
+            </nav>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            </form>
+    </div>
+        </div>
+    
+</body>
+</html>

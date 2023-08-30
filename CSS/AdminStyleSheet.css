@@ -1,0 +1,118 @@
+﻿body {
+}
+.counters {
+    display: flex;
+   flex-direction:column;
+    margin-top: 10px;
+    gap: 15px;
+    align-items:center;
+}
+.groupCounters {
+    display: flex;
+    flex-wrap: nowrap;
+    border: 1px dashed salmon;
+    gap: 10px;
+}
+.counter {
+    border-radius: 5px;
+    width: 400px;
+    height: 150px;
+ 
+    background-color: bisque;
+    border: 1px solid salmon;
+    margin-bottom: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+    .counter:hover {
+        background-color: yellow;
+        color: blue;
+    }
+.counterDisplay {
+    margin-left:auto;
+    margin-right:auto;
+    border: 1px solid salmon;
+    padding: 5px;
+    text-align: center;
+    border-radius: 6px;
+    width: 30px;
+}
+
+
+}
+#search, #delete {
+    background-color: greenyellow;
+    font-size: 1em;
+    border: 2px solid salmon;
+    border-radius: 5px
+}
+
+    #search:hover, #delete:hover {
+        background-color: yellow;
+    }
+
+#searchText, #deleteText {
+    border: 2px solid salmon;
+    border-radius: 5px;
+    height: 30px;
+    width: 120px;
+    font-size: 0.8em;
+}
+
+
+    #searchText:focus-within {
+        background-color: aquamarine;
+    }
+
+#mainCounter {
+    margin-top: 50px;
+    padding: 5px 10px;
+    border: 1px solid brown;
+}
+table#users {
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: arial, sans-serif;
+    border-collapse: separate;
+    table-layout: fixed;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    z-index: -1;
+    text-align: center;
+}
+
+    table#users th {
+        width: 7%;
+        text-align: center;
+        font-weight: lighter;
+    }
+
+    table#users td {
+        height: 20px;
+        text-align: center;
+    }
+
+    table#users td, th {
+        border: 1px solid #dddddd;
+        text-align: center;
+        padding: 8px;
+        width: 150px;
+    }
+
+    table#users tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+.flex-container {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+    .flex-container > div {
+        display: flex;
+        flex-direction: row;
+    }
+

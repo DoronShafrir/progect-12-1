@@ -1,0 +1,324 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0B142D42-D6CE-430C-9CDA-74D335F93697}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>task_12</RootNamespace>
+    <AssemblyName>task#12</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\Physics.mdf" />
+    <Content Include="App_Data\Physics_log.ldf">
+      <DependentUpon>Physics.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\try1.mdf" />
+    <Content Include="App_Data\try1_log.ldf">
+      <DependentUpon>try1.mdf</DependentUpon>
+    </Content>
+    <Content Include="CSS\AdminStyleSheet.css" />
+    <Content Include="Global.asax" />
+    <Content Include="HTML\Admin.aspx" />
+    <Content Include="HTML\Circular Motion.aspx" />
+    <Content Include="HTML\Current and Resistance.aspx" />
+    <Content Include="HTML\DC Circuits.aspx" />
+    <Content Include="HTML\Dynamics.aspx" />
+    <Content Include="HTML\Electic Potential Energy.aspx" />
+    <Content Include="HTML\Electical Field.aspx" />
+    <Content Include="HTML\Electricity and Coulombs Law.aspx" />
+    <Content Include="HTML\EMF and Induction.aspx" />
+    <Content Include="HTML\Energy.aspx" />
+    <Content Include="HTML\Gravitation.aspx" />
+    <Content Include="HTML\Harmonical Oscilation.aspx" />
+    <Content Include="HTML\Kinematics.aspx" />
+    <Content Include="HTML\LogCounters.aspx" />
+    <Content Include="HTML\LogIn.aspx" />
+    <Content Include="HTML\LogOut.aspx" />
+    <Content Include="HTML\LogUp.aspx" />
+    <Content Include="HTML\Magnets and Magnetic Fields.aspx" />
+    <Content Include="HTML\Momentum and Impulse.aspx" />
+    <Content Include="HTML\Optics.aspx" />
+    <Content Include="HTML\Physics.aspx" />
+    <Content Include="HTML\WebForm1.aspx" />
+    <Content Include="JS\LogIn.js" />
+    <Content Include="JS\LogUp.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\Circular Motion.aspx.cs">
+      <DependentUpon>Circular Motion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\Circular Motion.aspx.designer.cs">
+      <DependentUpon>Circular Motion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\Current and Resistance.aspx.cs">
+      <DependentUpon>Current and Resistance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\Current and Resistance.aspx.designer.cs">
+      <DependentUpon>Current and Resistance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\DC Circuits.aspx.cs">
+      <DependentUpon>DC Circuits.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\DC Circuits.aspx.designer.cs">
+      <DependentUpon>DC Circuits.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\Dynamics.aspx.cs">
+      <DependentUpon>Dynamics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\Dynamics.aspx.designer.cs">
+      <DependentUpon>Dynamics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\Electic Potential Energy.aspx.cs">
+      <DependentUpon>Electic Potential Energy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\Electic Potential Energy.aspx.designer.cs">
+      <DependentUpon>Electic Potential Energy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\Electical Field.aspx.cs">
+      <DependentUpon>Electical Field.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\Electical Field.aspx.designer.cs">
+      <DependentUpon>Electical Field.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\Electricity and Coulombs Law.aspx.cs">
+      <DependentUpon>Electricity and Coulombs Law.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\Electricity and Coulombs Law.aspx.designer.cs">
+      <DependentUpon>Electricity and Coulombs Law.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\EMF and Induction.aspx.cs">
+      <DependentUpon>EMF and Induction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\EMF and Induction.aspx.designer.cs">
+      <DependentUpon>EMF and Induction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\Energy.aspx.cs">
+      <DependentUpon>Energy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\Energy.aspx.designer.cs">
+      <DependentUpon>Energy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\Gravitation.aspx.cs">
+      <DependentUpon>Gravitation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\Gravitation.aspx.designer.cs">
+      <DependentUpon>Gravitation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\Harmonical Oscilation.aspx.cs">
+      <DependentUpon>Harmonical Oscilation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\Harmonical Oscilation.aspx.designer.cs">
+      <DependentUpon>Harmonical Oscilation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\Kinematics.aspx.cs">
+      <DependentUpon>Kinematics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\Kinematics.aspx.designer.cs">
+      <DependentUpon>Kinematics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\LogCounters.aspx.cs">
+      <DependentUpon>LogCounters.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\LogCounters.aspx.designer.cs">
+      <DependentUpon>LogCounters.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\LogIn.aspx.cs">
+      <DependentUpon>LogIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\LogIn.aspx.designer.cs">
+      <DependentUpon>LogIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\LogOut.aspx.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\LogOut.aspx.designer.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\LogUp.aspx.cs">
+      <DependentUpon>LogUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\LogUp.aspx.designer.cs">
+      <DependentUpon>LogUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\Magnets and Magnetic Fields.aspx.cs">
+      <DependentUpon>Magnets and Magnetic Fields.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\Magnets and Magnetic Fields.aspx.designer.cs">
+      <DependentUpon>Magnets and Magnetic Fields.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\Momentum and Impulse.aspx.cs">
+      <DependentUpon>Momentum and Impulse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\Momentum and Impulse.aspx.designer.cs">
+      <DependentUpon>Momentum and Impulse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\Optics.aspx.cs">
+      <DependentUpon>Optics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\Optics.aspx.designer.cs">
+      <DependentUpon>Optics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\Physics.aspx.cs">
+      <DependentUpon>Physics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\Physics.aspx.designer.cs">
+      <DependentUpon>Physics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\PhysiscsMaster.Master.cs">
+      <DependentUpon>PhysiscsMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\PhysiscsMaster.Master.designer.cs">
+      <DependentUpon>PhysiscsMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="HTML\PhysiscsMaster.Master" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="HTML\App_LocalResources\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>65331</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:65331/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
