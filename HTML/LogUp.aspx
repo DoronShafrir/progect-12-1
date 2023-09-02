@@ -11,24 +11,23 @@
     <table id="names">
         <tr>
             <td>User First Name</td>
-            <td id="fName" runat="server"><input    type="text" name="firstName" onkeyup="checkName(this, 'fmsg')"  /> </td> 
+            <td id="fName"> <input   type="text" name="firstName" onkeyup="checkName(this, 'fmsg')" runat="server" /> </td> 
             <td id="fmsg" class="messages" runat="server" > </td>
         </tr>
         <tr>
             <td>Last Name</td>
-            <td id="lName"><input   type="text" name="lastName" onkeyup="checkName(this, 'lmsg')" /> </td> 
+            <td id="lName"><input   type="text" name="lastName" onkeyup="checkName(this, 'lmsg')" runat="server" /> </td> 
             <td id="lmsg" class="messages"> </td>
         </tr>
         <tr>
             <td>User Name</td>
-            <td id="uName"><input   type="text" name="userName" onkeyup="checkName(this, 'umsg')" /> </td> 
+            <td id="uName"><input   type="text" name="userName" onkeyup="checkName(this, 'umsg')" runat="server" /> </td> 
             <td id="umsg" class="messages" runat="server" style="color:red"> </td>
         </tr>
         <tr>
             <td>Password</td>
             <td id="pName"><input type="password" name="password" onkeyup="checkPass(this)"  /> </td>
             <td id="pmsg" class="messages"> </td>
-        </tr>
         <tr>
             <td>E-Mail</td>
             <td id="email1"> <input  type="email" id="email" name="email" onkeyup="checkEmail(this)" /> </td>

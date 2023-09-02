@@ -78,6 +78,7 @@
     <Content Include="CSS\AdminStyleSheet.css" />
     <Content Include="Global.asax" />
     <Content Include="HTML\Admin.aspx" />
+    <Content Include="HTML\AdminMainPage.aspx" />
     <Content Include="HTML\Circular Motion.aspx" />
     <Content Include="HTML\Current and Resistance.aspx" />
     <Content Include="HTML\DC Circuits.aspx" />
@@ -90,7 +91,7 @@
     <Content Include="HTML\Gravitation.aspx" />
     <Content Include="HTML\Harmonical Oscilation.aspx" />
     <Content Include="HTML\Kinematics.aspx" />
-    <Content Include="HTML\LogCounters.aspx" />
+    <Content Include="HTML\AdminCounters.aspx" />
     <Content Include="HTML\LogIn.aspx" />
     <Content Include="HTML\LogOut.aspx" />
     <Content Include="HTML\LogUp.aspx" />
@@ -98,12 +99,14 @@
     <Content Include="HTML\Momentum and Impulse.aspx" />
     <Content Include="HTML\Optics.aspx" />
     <Content Include="HTML\Physics.aspx" />
+    <Content Include="HTML\Teaching Material.aspx" />
     <Content Include="HTML\WebForm1.aspx" />
     <Content Include="JS\LogIn.js" />
     <Content Include="JS\LogUp.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Code\Helper.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -113,6 +116,13 @@
     </Compile>
     <Compile Include="HTML\Admin.aspx.designer.cs">
       <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\AdminMainPage.aspx.cs">
+      <DependentUpon>AdminMainPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\AdminMainPage.aspx.designer.cs">
+      <DependentUpon>AdminMainPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="HTML\Circular Motion.aspx.cs">
       <DependentUpon>Circular Motion.aspx</DependentUpon>
@@ -198,12 +208,12 @@
     <Compile Include="HTML\Kinematics.aspx.designer.cs">
       <DependentUpon>Kinematics.aspx</DependentUpon>
     </Compile>
-    <Compile Include="HTML\LogCounters.aspx.cs">
-      <DependentUpon>LogCounters.aspx</DependentUpon>
+    <Compile Include="HTML\AdminCounters.aspx.cs">
+      <DependentUpon>AdminCounters.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="HTML\LogCounters.aspx.designer.cs">
-      <DependentUpon>LogCounters.aspx</DependentUpon>
+    <Compile Include="HTML\AdminCounters.aspx.designer.cs">
+      <DependentUpon>AdminCounters.aspx</DependentUpon>
     </Compile>
     <Compile Include="HTML\LogIn.aspx.cs">
       <DependentUpon>LogIn.aspx</DependentUpon>
@@ -260,6 +270,13 @@
     </Compile>
     <Compile Include="HTML\PhysiscsMaster.Master.designer.cs">
       <DependentUpon>PhysiscsMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="HTML\Teaching Material.aspx.cs">
+      <DependentUpon>Teaching Material.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\Teaching Material.aspx.designer.cs">
+      <DependentUpon>Teaching Material.aspx</DependentUpon>
     </Compile>
     <Compile Include="HTML\WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>

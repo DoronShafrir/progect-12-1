@@ -78,6 +78,7 @@ namespace task_12.HTML
             str += "</Table>";
             return str;
         }
+
         public DataTable FetchTable(string SQLStr)
         {
             string connectionString = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = |DataDirectory|\Physics.mdf;Integrated Security=True";

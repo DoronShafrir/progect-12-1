@@ -64,6 +64,8 @@
                             <a href="Momentum and Impulse.aspx">Momentum and Impulse</a>
                             <a href="Gravitation.aspx">Gravitation</a>
                             <a href="Harmonical Oscilation.aspx">Harmonical Oscilation</a>
+                            <a href="Teaching Material.aspx">Teaching Material</a>
+
                         </div>
                     </li>
                     <li class="dropdown" runat="server" id="Li5">
@@ -82,7 +84,8 @@
                         <a href="#">Admin</a>
                             <div class="dropdown-content">
                                 <a href="Admin.aspx">Users Admin</a>
-                                <a href="LogCounters.aspx">Application Admin</a>
+                                <a href="AdminCounters.aspx">Application Admin</a>
+                                <a href="AdminMainPage.aspx">Application  Main Admin</a>
                              </div>
                        </li>
                                     
