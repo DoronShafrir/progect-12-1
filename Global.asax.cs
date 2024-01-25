@@ -26,7 +26,7 @@ namespace task_12
 
             /*************initialize Uer and Admin *****************/
             Session["UserName"] = null;
-            Session["Admin"] = 0;
+            Session["Admin"] = false;
 
             /****************Update Counter in-site************************/
             Application["globalCounter"] = (int)Application["globalCounter"] + 1;

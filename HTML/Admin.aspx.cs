@@ -8,6 +8,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Linq.Expressions;
 using System.Web.DynamicData;
+using task_12.App_Code;
 
 namespace task_12.HTML
 {
@@ -42,7 +43,7 @@ namespace task_12.HTML
                     adapter.Fill(ds, "users");
                     /***************Build the table and render it *************************/
                     DataTable dt = ds.Tables["users"];
-                    string table = BuildUsersTable(dt);
+                    string table = BuildUsersTable1(dt);
                     tableDiv.InnerHtml = table;
                 }
             }
@@ -55,7 +56,7 @@ namespace task_12.HTML
         }
 
 
-        public string BuildUsersTable(DataTable dt)
+        public string BuildUsersTable1(DataTable dt)
         {
             string str = "<table id='users' align='center'>";
             str += "<tr>";
@@ -107,7 +108,7 @@ namespace task_12.HTML
                 string SQLStr = "SELECT * FROM Physics1 WHERE" + $" firstName LIKE '%{f_l_name}%' OR" + $" lastName LIKE '%{f_l_name}%' ";
                 DataTable dt = FetchTable(SQLStr);
 
-                string table = BuildUsersTable(dt);
+                string table = BuildUsersTable1(dt);
                 tableDiv.InnerHtml = table;
             }
         }
@@ -123,7 +124,7 @@ namespace task_12.HTML
                 /*************Render the table again after the DELETE *************/
                 SQLStr = "SELECT * FROM Physics1";
                 dt = FetchTable(SQLStr);
-                string table = BuildUsersTable(dt);
+                string table = Helper.BuildUsersTable(dt);
                 tableDiv.InnerHtml = table;
             }
         }

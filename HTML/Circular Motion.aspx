@@ -3,14 +3,15 @@
      <meta charset="utf-8" />
     <link href="..\CSS\StyleSheet1.css" rel="stylesheet" />
     <title>Circular Motion</title>
-       <title>Energy</title>
+       <title>Circular Motion</title>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <h1>Energy</h1>
+     <h1>Circular Motion</h1>
     <div class="page-title">
         <p>
-            Energy is a conserved quantity—the law of conservation of energy states that energy can be converted in form, but not created or destroyed.<br />
-            The unit of measurement for energy in the International System of Units (SI) is the joule (J). Energy.
+           Circular motion is described as a movement of an object while rotating along a circular path. 
+            Circular motion can be either uniform or non-uniform.<br/> During uniform circular motion, the angular rate of rotation and speed will be constant,
+            while during non-uniform motion the rate of rotation keeps changing.
         </p>
     </div>
     <div class="mainPic">

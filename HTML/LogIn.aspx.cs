@@ -16,8 +16,8 @@ namespace task_12.HTML
             
             if (IsPostBack)
             {
-                //string connectionString = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Users\USER\OneDrive\DSH\Doron\sources\repos\task#12\task#12\App_Data\Physics.mdf;Integrated Security=True";
-                string connectionString = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = |DataDirectory|\Physics.mdf;Integrated Security=True";
+                string connectionString = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Users\USER\OneDrive\DSH\Doron\sources\repos\task#12\task#12\App_Data\Physics.mdf;Integrated Security=True";
+                //string connectionString = @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = |DataDirectory|\Physics.mdf;Integrated Security=True";
                 SqlConnection con = new SqlConnection(connectionString);
                 // בניית פקודת SQL
                 string SQLStr = $"SELECT * FROM Physics1 WHERE UserName = '{Request.Form["userName"]}' AND Password = '{Request.Form["password"]}'";

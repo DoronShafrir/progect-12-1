@@ -23,6 +23,10 @@ p {
     flex-direction: column;
 }
 
+.page-title{
+    margin-left: 20px;
+}
+
 .mainVid {
    
 }
