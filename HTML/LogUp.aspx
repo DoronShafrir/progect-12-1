@@ -11,7 +11,11 @@
     <table id="names">
         <tr>
             <td>User First Name</td>
+<<<<<<< HEAD
             <td id="fName"> <input   type="text" name="firstName" onkeyup="checkName(this, 'fmsg')"  /> </td> 
+=======
+            <td id="fName"> <input   type="text" name="firstName" onkeyup="checkName(this, 'fmsg')" /> </td> 
+>>>>>>> 92beaab420a125ceb894503f15d1ef6ea4257893
             <td id="fmsg" class="messages" runat="server" > </td>
         </tr>
         <tr>
@@ -21,7 +25,11 @@
         </tr>
         <tr>
             <td>User Name</td>
+<<<<<<< HEAD
             <td id="uName"><input type="text" name="userName" id="userName" onkeyup="checkName(this, 'umsg')"  /> </td> 
+=======
+            <td id="uName"><input   type="text" name="userName" onkeyup="checkName(this, 'umsg')" /> </td> 
+>>>>>>> 92beaab420a125ceb894503f15d1ef6ea4257893
             <td id="umsg" class="messages" runat="server" style="color:red"> </td>
         </tr>
         <tr>

@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace task_12.HTML
+namespace task_12
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
