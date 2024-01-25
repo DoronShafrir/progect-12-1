@@ -5,7 +5,7 @@
     <title>Current and Resistance</title>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <h1>Electric Potential Energy</h1>
+     <h1>Current and Resistance</h1>
     <div class="page-title">
         <p>
             An electric current is a flow of charged particles, such as electrons or ions, moving through an electrical conductor or space.

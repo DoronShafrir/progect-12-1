@@ -10,6 +10,7 @@
 
         </div>
         <div class="active_buttons">
+            <button type="submit" class="admin-button"  onserverclick="searchRecords" >Edit</button>
             <button type="submit" class="admin-button"  onserverclick="editRecord" >Edit</button>
             <button type="submit" class="admin-button"  onserverclick="changeToUser" >Make User</button>
             <button type="submit" class="admin-button"  onserverclick="changeToAdmin" >Make Admin</button>

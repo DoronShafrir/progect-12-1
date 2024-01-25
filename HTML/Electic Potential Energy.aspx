@@ -1,12 +1,12 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/HTML/PhysiscsMaster.Master" AutoEventWireup="true" CodeBehind="Electic Potential Energy.aspx.cs" Inherits="task_12.HTML.Electic_Potential_Energy" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    ad>
+   
     <meta charset="utf-8" />
     <link href="../../CSS/StyleSheet1.css" rel="stylesheet" />
-    <title>Electric Potential Energy</title>
+    <title>Electrical Current</title>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <h1>Electric Potential Energy</h1>
+     <h1>Electrical Current</h1>
     <div class="page-title">
         <p>
             Electric potential energy is a potential energy (measured in joules)

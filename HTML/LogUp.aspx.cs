@@ -53,6 +53,7 @@ namespace task_12.HTML
                     dr["Password"] = Request.Form["password"];
                     dr["BirthDate"] = Request.Form["birth"];
                     dr["Email"] = Request.Form["email"];
+                    dr["Admin"] = 0;
                     ds.Tables["names"].Rows.Add(dr);
 
                     // עדכון הדאטה סט בבסיס הנתונים

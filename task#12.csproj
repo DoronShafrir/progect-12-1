@@ -80,6 +80,7 @@
     <Content Include="HTML\Admin.aspx" />
     <Content Include="HTML\AdminMainPage.aspx" />
     <Content Include="HTML\Circular Motion.aspx" />
+    <Content Include="HTML\CoursesPage.aspx" />
     <Content Include="HTML\Current and Resistance.aspx" />
     <Content Include="HTML\DC Circuits.aspx" />
     <Content Include="HTML\Dynamics.aspx" />
@@ -100,12 +101,27 @@
     <Content Include="HTML\Optics.aspx" />
     <Content Include="HTML\Physics.aspx" />
     <Content Include="HTML\Teaching Material.aspx" />
-    <Content Include="HTML\WebForm1.aspx" />
     <Content Include="JS\LogIn.js" />
     <Content Include="JS\LogUp.js" />
     <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HTML\CoursesPage.aspx.cs">
+      <DependentUpon>CoursesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML\CoursesPage.aspx.designer.cs">
+      <DependentUpon>CoursesPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Content Include="App_Code\Class1.cs" />
     <Compile Include="App_Code\Helper.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -278,13 +294,12 @@
     <Compile Include="HTML\Teaching Material.aspx.designer.cs">
       <DependentUpon>Teaching Material.aspx</DependentUpon>
     </Compile>
-    <Compile Include="HTML\WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="HTML\WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-    </Compile>
+    <Compile Include="Mapping\CourseDB.cs" />
+    <Compile Include="Model\Course.cs" />
+    <Compile Include="Model\People.cs" />
+    <Compile Include="Model\Students.cs" />
+    <Compile Include="Model\Teachers.cs" />
+    <Compile Include="Model\UserNPasswords.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

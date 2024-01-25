@@ -2,10 +2,10 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
      <meta charset="utf-8" />
     <link href="..\..\CSS\StyleSheet1.css" rel="stylesheet" />
-    <title>Mmomentum and Impulse</title>
+    <title>  Momentum and Impulse</title>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-     <h1>Mmomentum and Impulse</h1>
+     <h1>Momentum and Impulse</h1>
     <div class="page-title">
         <p>
             Momentum is a measurement of mass in motion: how much mass is in how much motion. It is usually given the symbol P<br />
